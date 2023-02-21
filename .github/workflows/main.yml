@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: sekar042/create-react-app
+        uses: actions/checkout@v2
       - name: Build code
         run: |
           npm install
