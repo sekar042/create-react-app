@@ -1,0 +1,14 @@
+name: My GitHub Actions Workflow
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: sekar042/create-react-app
+      - name: Build code
+        run: |
+          npm install
+          npm run build
